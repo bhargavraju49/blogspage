@@ -1,4 +1,3 @@
-import { async } from '@firebase/util';
 import {
   collection,
   getDocs,
@@ -31,7 +30,7 @@ function Home() {
 
       {posts.map((post, index) => (
         <div className="post" key={`post-${index}`}>
-          <Link to={`/post/${post.id}`}>
+          <Link to={`/post/${post.id}`}>    {/* added url params to fetch content easy */}
             <h3>{post.title}</h3>
           </Link>
 
