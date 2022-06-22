@@ -8,7 +8,7 @@ function App() {
       <Routes>
         <Route exact path='/' element={<Home />}  />
         <Route exact path='/post/:postId' element={<PostDetail />} />
-        <Route exact path='/creat-post' element={<CreatePost />}  />
+        <Route exact path='/create-post' element={<CreatePost />}  />
       </Routes>
     </div>
   );
