@@ -21,9 +21,7 @@ function CreatePost() {
       createdAt: new Date(),
     };
     // firebase in-build functions to add a new doc with random doc name {docRef.id}
-    const docRef = await addDoc(collection(db, 'Posts'), {
-      data,
-    });
+    const docRef = await addDoc(collection(db, 'Posts'), data);
   }
 
   return (
